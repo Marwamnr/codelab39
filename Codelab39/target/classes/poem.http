@@ -1,0 +1,78 @@
+###
+GET http://localhost:7777/poems
+
+###
+GET http://localhost:7777/poem/1
+
+###
+POST http://localhost:7777/poem
+Content-Type: application/json
+
+{
+  "title": "An old silent pond",
+  "author": "Matsuo Bashō",
+  "poem": "An old silent pond,A frog jumps into the pond,Splash! Silence again.",
+  "type": "HAIKU"
+
+}
+
+###
+POST http://localhost:7777/poem
+Content-Type: application/json
+
+{
+  "title": "The wintry Forest",
+  "author": "Natsume Sōseki",
+  "poem": "Over the wintry Forest, winds howl in rage, with no leaves to blow.",
+  "type": "HAIKU"
+}
+
+###
+
+POST http://localhost:7777/poem
+Content-Type: application/json
+
+{
+"title": "The light of a candle",
+"author": "Unknown",
+"poem": "The light of a candle, flickers in the dark night, whispering secrets.",
+"type": "HAIKU"
+}
+###
+POST http://localhost:7777/poem
+Content-Type: application/json
+
+{
+  "title": "Autumn leaves",
+  "author": "Unknown",
+  "poem": "Autumn leaves falling, swirling in the chilly breeze, nature's soft farewell.",
+  "type": "HAIKU"
+}
+
+
+###
+POST http://localhost:7777/poem
+Content-Type: application/json
+
+{
+  "title": "Morning dew",
+  "author": "Unknown",
+  "poem": "Morning dew glistens, like tiny stars on green grass, a new day begins.",
+  "type": "HAIKU"
+}
+
+
+###
+PUT http://localhost:7777/poem/1
+Content-Type: application/json
+
+{
+  "title": "Updated Title",
+  "author": "Updated Author",
+  "poem": "Updated poem text.",
+  "type": "HAIKU"
+}
+
+###
+DELETE http://localhost:7777/poem/2
+
